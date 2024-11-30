@@ -8,7 +8,7 @@ export const create_admin = async (req, res) => {
         await newAdmin.save();
         res.status(201).send("Admin added successfully !");
     }
-    catch (error) {
-        console.log(error);
+    catch (err) {
+        console.log(err);
     }
 }
